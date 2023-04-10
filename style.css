@@ -1,0 +1,84 @@
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #2F4F4F;
+   height: 100vh;
+}
+p{
+   font-size: 20px;
+   line-height: 1.5;
+}
+header{
+   text-align: center;
+   color: white;
+   padding-bottom: 30px ;
+   
+}
+header h1{
+   font-size: 35px;
+   font-weight: 300;
+   line-height: 1;
+}
+header h1 span{
+   font-weight: 900;
+   color: #AFEEEE;
+}
+section .container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+ 
+form button{
+   outline: none;
+   border: 1px solid white;
+   border-radius: 5px;
+   padding: 7px;
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   font-size: 14px ;
+   font-weight: 500;
+   transform: all .3s;
+}
+form button:hover{
+   background-color: #66CDAA;
+}
+
+.modal{
+   display: none;
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 1;
+}
+.modal-content{
+   width: 80%;
+   max-width: 600px ;
+   background-color: #696969	;
+   margin: 15px auto;
+   padding: 20px;
+   border : 1px solid #D3D3D3;
+   text-align: center;
+   animation: slide ease 0.8s;
+}
+@keyframes slide {
+    0%{
+      transform: translateY(-300px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+}
+.close{
+   cursor: pointer;
+   display: flex;
+   justify-content: right;
+}
